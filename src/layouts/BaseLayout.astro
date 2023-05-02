@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import '@fontsource/ubuntu-mono'
 const { pageTitle } = Astro.props;
 ---
 
@@ -12,10 +13,14 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
-  <body>
-    <Header />
-    <h1>{pageTitle}</h1>
-    <slot />
+  <body class="p-4 my-8 mx-auto max-w-screen-lg">
+    <div class="grid grid-cols-5">
+      <Header />
+      <section class="p-4 col-span-4">
+        <h1>{pageTitle}</h1>
+        <slot />
+      </section>
+    </div>
     <Footer />
   </body>
 </html>

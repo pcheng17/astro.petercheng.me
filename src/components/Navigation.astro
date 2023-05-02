@@ -1,8 +1,11 @@
 ---
+import NavItem from "./NavItem.astro";
 ---
 
-<div class="">
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/blog">Blog</a>
-</div>
+<nav class="flex flex-wrap">
+  <ul>
+    <NavItem title="Home" url="/" />
+    <NavItem title="About" url="/about" />
+    <NavItem title="Blog" url="/blog" />
+  </ul>
+</nav>
