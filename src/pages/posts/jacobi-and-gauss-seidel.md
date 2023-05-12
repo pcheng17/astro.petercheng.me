@@ -16,6 +16,8 @@ pubDate: 2023-01-09
 lastmod:
 ---
 
+# Jacobi and Gauss-Seidel
+
 Suppose we are interested in solving an $n \times n$ [system of linear equations](https://en.wikipedia.org/wiki/System_of_linear_equations) of the form $Ax=b$. Generally speaking, there are two classes of solvers that we can consider: **direct** and **iterative** solvers. **Direct** solvers aim to directly compute the numerically correct solution, like using an LU factorization, whereas **iterative** solvers aim to produce better and better solutions every iteration. The choice between these two techniques comes down to the problem at hand, and everything that should be considered to make the decision between one or the other is well-beyond the scope of this post.
 
 Instead, let's suppose that we've already decided that an iterative approach is best suited for solving our linear system $Ax=b$, which sets the stage for our discussion of the **Jacobi** and **Guass-Seidel** solvers.
