@@ -30,7 +30,12 @@ $$
 (D+L+U)x=b \quad \implies \quad x=D^{-1}(b-(L+U)x)
 \end{equation}
 $$
-Observe that the solution to $Ax=b$ is a fixed-point to $(1)$, so to this end, applying fixed-point iteration yields $$ x^{(k+1)} = D^{-1}\left(b-(L+U)x^{(k)}\right),$$ which is the **Jacobi** method. Note that the matrix inversion of the Jacobi method is simply dividing by the diagonal elements of $A$.
+Observe that the solution to $Ax=b$ is a fixed-point to $(1)$, so to this end, applying fixed-point
+iteration yields 
+$$ 
+x^{(k+1)} = D^{-1}\left(b-(L+U)x^{(k)}\right),
+$$ 
+which is the **Jacobi** method. Note that the matrix inversion of the Jacobi method is simply dividing by the diagonal elements of $A$.
 
 Another way to think about the Jacobi method is as follows: to find the $i$th component of the next iterate, i.e., $x_i^{(k+1)}$, we compute
 $$ 

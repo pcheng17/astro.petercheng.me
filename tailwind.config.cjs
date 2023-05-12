@@ -24,7 +24,7 @@ module.exports = {
                 fontFace: theme('fontFamily.mono'),
                 fontSize: theme('fontSize.md'),
                 fontWeight: theme('fontWeight.normal'),
-                backgroundColor: theme('colors.stone.100'),
+                backgroundColor: theme('colors.slate.100'),
                 borderRadius: theme('borderRadius.md'),
                 border: `1px solid ${theme('colors.stone.200')}`,
                 paddingLeft: theme('spacing[1.5]'),

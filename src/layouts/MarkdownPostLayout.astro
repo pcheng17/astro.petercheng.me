@@ -4,9 +4,13 @@ const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-  <p>Published on: {frontmatter.pubDate.slice(0, 10)}</p>
-  <p><em>{frontmatter.description}</em></p>
-  <article class="prose max-w-none">
+  <article
+    class="prose max-w-none prose-a:underline hover:prose-a:underline hover:prose-a:text-violet-600"
+  >
+    <p class="text-slate-400 text-sm">
+      Published on: {frontmatter.pubDate.slice(0, 10)}
+    </p>
+    <p><em>{frontmatter.description}</em></p>
     <slot />
   </article>
 </BaseLayout>

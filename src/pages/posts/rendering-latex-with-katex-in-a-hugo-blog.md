@@ -15,6 +15,8 @@ pubDate: 2022-11-28
 lastmod:
 ---
 
+# Rendering $\LaTeX$ with KaTeX in a Hugo blog
+
 I recently started my Hugo blog, and I plan on using it mostly as a knowledge dump for myself and anyone else in the world who might find what I learn useful. That being said, I definitely needed to figure out how to render LaTeX. It seems like people generally use either [KaTeX](https://katex.org/) or [MathJax](https://www.mathjax.org/). After doing some research, I chose KaTeX because of its [speed](https://www.intmath.com/cg5/katex-mathjax-comparison.php) and its look - the math font from MathJax was just a little bit too bold for me. Anyway, here's what I did
 to get KaTeX setup!
 
