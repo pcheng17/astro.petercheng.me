@@ -1,7 +1,10 @@
 ---
 import Social from "./Social.astro";
+const today = new Date();
 ---
 
-<footer class="p-4 flex">
-  <Social platform="github" username="pcheng17" />
+<footer class="p-4 text-center  text-zinc-400 text-xs">
+  <span> &copy; </span>
+  {today.getFullYear()}
+  <a href="/" class="text-zinc-400 hover:text-zinc-500">Peter Cheng</a>
 </footer>

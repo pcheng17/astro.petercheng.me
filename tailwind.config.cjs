@@ -7,8 +7,8 @@ module.exports = {
 	theme: {
     extend: {
       fontFamily: {
-        sans: ['Ubuntu Mono', ...defaultTheme.fontFamily.sans],
-      }
+        sans: ['et-book', 'Ubuntu Mono', ...defaultTheme.fontFamily.sans],
+      },
     },
     screens: {
       'sm': '640px',
