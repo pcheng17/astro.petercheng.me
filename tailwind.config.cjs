@@ -7,7 +7,7 @@ module.exports = {
 	theme: {
     extend: {
       fontFamily: {
-        sans: ['et-book', 'Ubuntu Mono', ...defaultTheme.fontFamily.sans],
+        sans: ["HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", ...defaultTheme.fontFamily.sans],
       },
     },
     screens: {
