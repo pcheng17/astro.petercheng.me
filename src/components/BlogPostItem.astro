@@ -1,6 +1,9 @@
 ---
-const { title, url } = Astro.props;
+const { title, url, desc} = Astro.props;
 ---
 <li>
-  <a href={url} class="hover:underline">{title}</a>
+  <a href={url} class="text-lg text-[#a00000] hover:underline">{title}</a>
+  <p class="py-4">
+    {desc}
+  </p>
 </li>

@@ -9,10 +9,10 @@ const pageTitle = "Home Page";
   <p>
     This is my site. I'm trying to learn how to use Astro, which has been quite interesting so far.
   </p>
-  <ul>
+  <ul class="block list-disc my-4 pl-10">
     {
       allPosts.map((post) => (
-        <BlogPostItem title={post.frontmatter.title} url={post.url} />
+        <BlogPostItem title={post.frontmatter.title} url={post.url} desc={post.frontmatter.description} />
       ))
     }
   </ul>

@@ -5,7 +5,7 @@ import '@fontsource/ubuntu-mono'
 const { pageTitle } = Astro.props;
 ---
 
-<html lang="en" style="margin-left: calc(100vw - 100%)">
+<html lang="en" class="overflow-y-scroll">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -28,7 +28,7 @@ const { pageTitle } = Astro.props;
       onload="renderMathInElement(document.body);"></script>
     <title>{pageTitle}</title>
   </head>
-  <body class="p-4 mx-auto max-w-screen-md bg-[#fff9f3]">
+  <body class="text-sm p-4 mx-auto max-w-screen-md bg-[#fffbf3] text-stone-950">
     <Header />
     <div>
       <section class="p-4">

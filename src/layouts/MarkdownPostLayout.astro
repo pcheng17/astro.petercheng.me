@@ -1,14 +1,21 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 const { frontmatter } = Astro.props;
+
+const date = new Date(frontmatter.pubDate);
+const englishDate = date.toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
   <article
-    class="prose max-w-none prose-a:no-underline prose-a:text-red-500 hover:prose-a:underline"
+    class="prose text-sm max-w-none prose-a:no-underline prose-a:text-[#a00000] hover:prose-a:underline"
   >
-    <p class="text-slate-400 text-sm">
-      Published on: {frontmatter.pubDate.slice(0, 10)}
+    <p class="text-stone-400 text-sm">
+      Published on: {englishDate}
     </p>
     <p><em>{frontmatter.description}</em></p>
     <slot />

@@ -6,9 +6,7 @@ description: Jacobi and Gauss-Seidel are two popular iterative methods for solvi
 keywords:
 categories:
 - note
-tags:
-- math
-- linear-algebra
+tags: ["math", "linear-algebra"]
 math: true
 toc: false
 draft: false

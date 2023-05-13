@@ -6,9 +6,7 @@ description: A tutorial on using KaTeX to render LaTeX for blogs built with Hugo
 keywords:
 categories:
 - tutorial
-tags:
-- hugo
-- latex
+tags: ["hugo", "latex"]
 math: true
 draft: false
 pubDate: 2022-11-28
