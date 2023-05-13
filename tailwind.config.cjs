@@ -43,6 +43,10 @@ module.exports = {
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1536px',
+    },
+    colors: {
+      'dark-red': '#a00000',
+      'floral-white': '#fffbf3',
     }
 	},
 	plugins: [
