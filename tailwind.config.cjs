@@ -10,6 +10,10 @@ module.exports = {
         // sans: ["sans-serif", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", ...defaultTheme.fontFamily.sans],
         mono: ["Ubuntu Mono", ...defaultTheme.fontFamily.mono]
       },
+      colors: {
+        'dark-red': '#a00000',
+        'floral-white': '#fffbf3',
+      },
       typography (theme) {
         return {
           DEFAULT: {
@@ -43,7 +47,7 @@ module.exports = {
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1536px',
-    }
+    },
 	},
 	plugins: [
     require('@tailwindcss/typography'),

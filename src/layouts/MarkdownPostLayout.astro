@@ -12,9 +12,9 @@ const englishDate = date.toLocaleDateString("en-US", {
 
 <BaseLayout pageTitle={frontmatter.title}>
   <article
-    class="prose text-sm max-w-none prose-a:no-underline prose-a:text-[#a00000] hover:prose-a:underline"
+    class="prose text-sm max-w-none prose-a:no-underline prose-a:text-dark-red hover:prose-a:underline"
   >
-    <p class="text-stone-400 text-sm">
+    <p class="text-neutral-400 text-sm">
       Published on: {englishDate}
     </p>
     <p><em>{frontmatter.description}</em></p>
