@@ -32,6 +32,7 @@ const { posts } = Astro.props;
         <BlogPostItem
           url={post.url}
           title={post.frontmatter.title}
+          tags={post.frontmatter.tags}
           desc={post.frontmatter.description}
         />
       ))

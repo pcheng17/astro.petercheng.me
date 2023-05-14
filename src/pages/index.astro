@@ -12,7 +12,12 @@ const pageTitle = "Home Page";
   <ul class="block list-disc my-4 pl-10">
     {
       allPosts.map((post) => (
-        <BlogPostItem title={post.frontmatter.title} url={post.url} desc={post.frontmatter.description} />
+        <BlogPostItem
+          title={post.frontmatter.title}
+          url={post.url}
+          tags={post.frontmatter.tags}
+          desc={post.frontmatter.description}
+        />
       ))
     }
   </ul>
