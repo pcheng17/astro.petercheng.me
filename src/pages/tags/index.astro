@@ -1,14 +1,34 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+// import TagItem from '../../components/TagItem.astro';
 const allPosts = await Astro.glob('../posts/*.md');
-const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+
+function countStrings(arr: string[]) {
+  let counts: {[key: string]: number} = {};
+  for (const str of arr) {
+    counts[str] = counts[str] ? counts[str] + 1 : 1;
+  }
+  return counts;
+}
+
+const tags = allPosts.map((post) => post.frontmatter.tags).flat();
+const tagCounts = countStrings(tags);
+const uniqueTags = [...new Set(tags)].sort();
+
 const pageTitle = "Tags";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
+  <h1 class="font-extrabold text-2xl">
+    {pageTitle}
+  </h1>
   <div>
-    {tags.map((tag) => (
-      <p><a href={`/tags/${tag}`}>{tag}</a></p>
-    ))}
+    <ul class="block list-disc my-4 pl-10">
+      {
+        uniqueTags.map((tag) => (
+          <li><a class="text-dark-red" href={`/tags/${tag}`}>{tag}</a> ({tagCounts[tag]})</li>
+        ))
+      }
+    </ul>
   </div>
 </BaseLayout>

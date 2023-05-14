@@ -1,0 +1,7 @@
+---
+const { tag, count } = Astro.props;
+---
+
+<li>
+  <a class="text-dark-red" href={`/tags/${tag}`}>{tag}</a> ({count})
+</li>
