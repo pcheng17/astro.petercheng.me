@@ -4,17 +4,15 @@ const { title, url, tags, desc } = Astro.props;
 
 <li>
   <a href={url} class="text-lg text-penn-red hover:underline">{title}</a>
-  <div>
-    {
-      tags.map((tag) => (
-        <span class="inline-block text-neutral-400 text-xs px-1">
-          <a href={`/tags/${tag}`} class="hover:underline">
-            #{tag}
-          </a>
-        </span>
-      ))
-    }
-  </div>
+  {
+    tags.map((tag) => (
+      <span class="inline-block text-neutral-400 text-xs px-1">
+        <a href={`/tags/${tag}`} class="hover:underline">
+          #{tag}
+        </a>
+      </span>
+    ))
+  }
   <p class="pt-2 pb-4">
     {desc}
   </p>

@@ -33,13 +33,11 @@ const { pageTitle } = Astro.props;
     ></script>
     <title>{pageTitle}</title>
   </head>
-  <body class="text-sm leading-7 p-4 mx-auto max-w-screen-md bg-floral-white text-neutral-950">
+  <body class="text-sm leading-7 p-2 mx-auto max-w-screen-md bg-floral-white text-neutral-950">
     <Header />
-    <div>
-      <section class="p-4">
-        <slot />
-      </section>
-    </div>
+    <main class="px-2 py-4">
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>
