@@ -1,7 +1,6 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import '@fontsource/ubuntu-mono'
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 const { pageTitle } = Astro.props;
 ---
 
@@ -11,21 +10,27 @@ const { pageTitle } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="stylesheet"
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.css"
       integrity="sha384-Cqd8ihRLum0CCg8rz0hYKPoLZ3uw+gES2rXQXycqnL5pgVQIflxAUDS7ZSjITLb5"
-      crossorigin="anonymous">
+      crossorigin="anonymous"
+    />
     <!-- The loading of KaTeX is deferred to speed up page rendering -->
-    <script defer
+    <script
+      defer
       src="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.js"
       integrity="sha384-1Or6BdeNQb0ezrmtGeqQHFpppNd7a/gw29xeiSikBbsb44xu3uAo8c7FwbF5jhbd"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <!-- To automatically render math in text elements, include the auto-render extension -->
-    <script defer
+    <script
+      defer
       src="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/contrib/auto-render.min.js"
       integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"
       crossorigin="anonymous"
-      onload="renderMathInElement(document.body);"></script>
+      onload="renderMathInElement(document.body);"
+    ></script>
     <title>{pageTitle}</title>
   </head>
   <body class="text-sm leading-7 p-4 mx-auto max-w-screen-md bg-floral-white text-neutral-950">
