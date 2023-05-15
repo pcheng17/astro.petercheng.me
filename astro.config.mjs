@@ -1,17 +1,22 @@
-import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import { defineConfig } from "astro/config";
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
   markdown: {
-    remarkPlugins: [
-      'remark-math',
-    ],
+    remarkPlugins: ["remark-math"],
     rehypePlugins: [
-      ['rehype-katex', {
-        // Katex plugin options
-      }],
+      [
+        "rehype-katex",
+        {
+          // Katex plugin options
+        },
+      ],
     ],
-  }
+    shikiConfig: {
+      theme: "min-light",
+      wrap: true,
+    },
+  },
 });
