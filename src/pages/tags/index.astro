@@ -1,10 +1,10 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from "../../layouts/BaseLayout.astro";
 // import TagItem from '../../components/TagItem.astro';
-const allPosts = await Astro.glob('../posts/*.md');
+const allPosts = await Astro.glob("../posts/*.md");
 
 function countStrings(arr: string[]) {
-  let counts: {[key: string]: number} = {};
+  let counts: { [key: string]: number } = {};
   for (const str of arr) {
     counts[str] = counts[str] ? counts[str] + 1 : 1;
   }
@@ -26,7 +26,12 @@ const pageTitle = "Tags";
     <ul class="block list-disc my-4 pl-10">
       {
         uniqueTags.map((tag) => (
-          <li><a class="text-dark-red" href={`/tags/${tag}`}>{tag}</a> ({tagCounts[tag]})</li>
+          <li>
+            <a class="text-penn-red" href={`/tags/${tag}`}>
+              {tag}
+            </a>{" "}
+            ({tagCounts[tag]})
+          </li>
         ))
       }
     </ul>

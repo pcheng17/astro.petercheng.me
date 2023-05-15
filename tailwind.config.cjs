@@ -11,7 +11,7 @@ module.exports = {
         mono: ["Ubuntu Mono", ...defaultTheme.fontFamily.mono],
       },
       colors: {
-        'dark-red': '#a00000',
+        "penn-red": "#a00000",
         "floral-white": "#fffbf3",
       },
       typography(theme) {
