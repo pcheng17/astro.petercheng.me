@@ -10,7 +10,7 @@ tags: ["math", "linear-algebra"]
 math: true
 toc: false
 draft: false
-pubDate: 2023-01-09
+publishDate: 2023-01-09
 lastmod:
 ---
 

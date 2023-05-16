@@ -9,7 +9,7 @@ categories:
 tags: ["hugo", "latex"]
 math: true
 draft: false
-pubDate: 2022-11-28
+publishDate: 2022-11-28
 lastmod:
 ---
 
