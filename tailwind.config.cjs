@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         // sans: ["sans-serif", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", ...defaultTheme.fontFamily.sans],
+        sans: ["Noto Sans", "sans-serif"],
         mono: ["Ubuntu Mono", ...defaultTheme.fontFamily.mono],
       },
       colors: {
