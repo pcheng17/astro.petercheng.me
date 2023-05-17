@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: Rendering LaTeX with KaTeX in a Hugo blog
 date: 2022-11-03T00:21:12-07:00
 description: A tutorial on using KaTeX to render LaTeX for blogs built with Hugo.
@@ -9,8 +8,8 @@ categories:
 tags: ["hugo", "latex"]
 math: true
 draft: false
-publishDate: 2022-11-28
-lastmod:
+pubDate: 2022-11-28
+lastMod:
 ---
 
 # Rendering $\LaTeX$ with KaTeX in a Hugo blog

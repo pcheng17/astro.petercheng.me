@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: "Change the remote URL of a Git repository"
 date: 2022-11-13T23:26:02-08:00
 description: How to change the remote URL of a git repository.
@@ -11,8 +10,8 @@ tags:
 math: false
 toc: false
 draft: false
-publishDate: 2022-11-23
-lastmod:
+pubDate: 2022-11-23
+lastMod:
 ---
 
 # Change the remote URL of a Git repository

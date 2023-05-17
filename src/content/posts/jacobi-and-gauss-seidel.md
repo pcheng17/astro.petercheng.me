@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: Jacobi and Gauss-Seidel
 date: 2023-01-12
 description: Jacobi and Gauss-Seidel are two popular iterative methods for solving systems of linear equations.
@@ -10,8 +9,8 @@ tags: ["math", "linear-algebra"]
 math: true
 toc: false
 draft: false
-publishDate: 2023-01-09
-lastmod:
+pubDate: 2023-01-09
+lastMod:
 ---
 
 # Jacobi and Gauss-Seidel
