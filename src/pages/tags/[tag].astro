@@ -4,7 +4,9 @@ import PostItem from "../../components/PostItem.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const allPosts = await getCollection("posts");
+  const allPosts = await getCollection("posts", ({ data }) => {
+    return data.draft !== true;
+  });
 
   const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 

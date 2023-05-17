@@ -2,7 +2,9 @@ import rss, { pagesGlobToRssItems } from "@astrojs/rss";
 import { getCollection } from "astro:content";
 
 export async function get() {
-  const blogPosts = await getCollection('posts');
+  const allPosts = await getCollection("posts", ({ data }) => {
+    return data.draft !== true;
+  });
   return rss({
     title: "Peter Cheng",
     description: "Peter Cheng's website",
