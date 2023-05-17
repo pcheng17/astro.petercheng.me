@@ -14,6 +14,8 @@ pubDate: 2022-11-26
 lastmod:
 ---
 
+# Python pip requirements file
+
 Oftentimes, it's very useful to record all of the required modules/packages of a Python project. For example, this makes it very easy to get your project up and running on different computers. 
 
 Assuming you're using [`pip`](https://pypi.org/project/pip/) to manage your packages, run the following command:
