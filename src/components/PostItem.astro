@@ -1,5 +1,12 @@
 ---
-const { title, url, tags, desc } = Astro.props;
+const { frontmatter, url } = Astro.props;
+const title = frontmatter.title;
+const tags = frontmatter.tags;
+const englishDate = frontmatter.pubDate.toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+});
 ---
 
 <li>
@@ -13,7 +20,4 @@ const { title, url, tags, desc } = Astro.props;
       </span>
     ))
   }
-  <!-- <p class="pt-2 pb-4">
-    {desc}
-  </p> -->
 </li>

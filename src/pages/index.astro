@@ -2,9 +2,14 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PostItem from "../components/PostItem.astro";
 import { getCollection } from "astro:content";
+
 const allPosts = await getCollection("posts", ({ data }) => {
   return data.draft !== true;
 });
+const sortedPosts = allPosts.sort((a, b) => {
+  return a.data.pubDate < b.data.pubDate ? 1 : -1;
+});
+
 const pageTitle = "Home Page";
 ---
 
@@ -13,15 +18,6 @@ const pageTitle = "Home Page";
     This is my site. I'm trying to learn how to use Astro, which has been quite interesting so far.
   </p>
   <ul class="block list-disc my-4 pl-10">
-    {
-      allPosts.map((post) => (
-        <PostItem
-          title={post.data.title}
-          url={"/posts/" + post.slug}
-          tags={post.data.tags}
-          desc={post.data.description}
-        />
-      ))
-    }
+    {sortedPosts.map((post) => <PostItem frontmatter={post.data} url={"/posts/" + post.slug} />)}
   </ul>
 </BaseLayout>
