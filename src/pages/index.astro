@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import BlogPostItem from "../components/BlogPostItem.astro";
+import PostItem from "../components/PostItem.astro";
 import { getCollection } from "astro:content";
-const allBlogPosts = await getCollection("posts");
+const allPosts = await getCollection("posts");
 const pageTitle = "Home Page";
 ---
 
@@ -12,8 +12,8 @@ const pageTitle = "Home Page";
   </p>
   <ul class="block list-disc my-4 pl-10">
     {
-      allBlogPosts.map((post) => (
-        <BlogPostItem
+      allPosts.map((post) => (
+        <PostItem
           title={post.data.title}
           url={"/posts/" + post.slug}
           tags={post.data.tags}
