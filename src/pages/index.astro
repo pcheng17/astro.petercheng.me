@@ -17,7 +17,8 @@ const description = null;
 
 <BaseLayout title={title}>
   <p class="my-4">
-    This is my site. I'm trying to learn how to use Astro, which has been quite interesting so far.
+    An ever-growing collection of notes on things I find interesting. I hope you enjoy your time
+    browsing!
   </p>
   <ul class="block list-disc my-4 pl-10">
     {sortedPosts.map((post) => <PostItem frontmatter={post.data} url={"/posts/" + post.slug} />)}
