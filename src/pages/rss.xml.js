@@ -9,7 +9,7 @@ export async function get() {
     title: "Peter Cheng",
     description: "Peter Cheng's website",
     site: "https://inquisitive-gelato-e04f0f.netlify.app/",
-    items: blogPosts.map((post) => ({
+    items: allPosts.map((post) => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
       description: post.data.description,
