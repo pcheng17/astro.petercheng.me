@@ -1,17 +1,29 @@
 ---
-const { pageTitle } = Astro.props;
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
 ---
 
 <head>
+  <!-- Global metadata -->
   <meta charset="utf-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="generator" content={Astro.generator} />
+
+  <!-- Page metadata -->
+  <title>{title}</title>
+  <meta name="title" content={title} />
+  <meta name="description" content={description} />
+
+  <!-- Katex styling  -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.css"
     integrity="sha384-Cqd8ihRLum0CCg8rz0hYKPoLZ3uw+gES2rXQXycqnL5pgVQIflxAUDS7ZSjITLb5"
     crossorigin="anonymous"
   />
-  <title>{pageTitle}</title>
 </head>

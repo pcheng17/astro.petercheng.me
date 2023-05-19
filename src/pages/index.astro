@@ -10,10 +10,12 @@ const sortedPosts = allPosts.sort((a, b) => {
   return a.data.pubDate < b.data.pubDate ? 1 : -1;
 });
 
-const pageTitle = "Home Page";
+const title = "Home Page";
+// TODO - add description
+const description = null;
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout title={title}>
   <p>
     This is my site. I'm trying to learn how to use Astro, which has been quite interesting so far.
   </p>
