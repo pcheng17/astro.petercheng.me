@@ -1,6 +1,6 @@
 import { z, defineCollection } from "astro:content";
 
-const postsCollection = defineCollection({
+const posts = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
@@ -14,5 +14,5 @@ const postsCollection = defineCollection({
 });
 
 export const collections = {
-  posts: postsCollection,
+  posts: posts,
 };

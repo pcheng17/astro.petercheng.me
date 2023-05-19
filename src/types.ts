@@ -1,8 +1,7 @@
 export type Site = {
-  website: string;
+  site: string;
   author: string;
   bio: string;
-  desc: string;
+  description: string;
   title: string;
-  copyright: string;
 };
