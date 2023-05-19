@@ -19,7 +19,7 @@ export async function get() {
       description: post.data.description,
       link: `/posts/${post.slug}`,
     })),
-    // stylesheet: "/rss/styles.xsl",
+    stylesheet: "/rss/styles.xsl",
     customData: `<language>en-us</language>`,
   });
 }
