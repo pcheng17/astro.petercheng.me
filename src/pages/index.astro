@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PostItem from "../components/PostItem.astro";
 import { getCollection } from "astro:content";
+import { SITE } from "../config.ts";
 
 const allPosts = await getCollection("posts", ({ data }) => {
   return data.draft !== true;
@@ -11,13 +12,12 @@ const sortedPosts = allPosts.sort((a, b) => {
 });
 
 const title = "Home - Peter Cheng";
-// TODO - add description
-const description = null;
+const description = SITE.description;
 ---
 
-<BaseLayout title={title}>
+<BaseLayout title={title} description={description}>
   <p class="my-4">
-    An ever-growing collection of notes on things I find interesting. I hope you enjoy your time
+    An incomplete yet ever-growing collection of notes on things I've learned. Enjoy your time
     browsing!
   </p>
   <ul class="block list-disc my-4 pl-10">

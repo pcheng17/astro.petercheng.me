@@ -6,5 +6,5 @@ export const SITE: Site = {
   bio: "Mathematician. Software engineer.",
   description:
     "Peter Cheng's website. A little bit of everything involving my work, life, and hobbies.",
-  title: "Peter Cheng",
+  title: "Peter Cheng's website",
 };
