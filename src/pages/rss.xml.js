@@ -12,7 +12,7 @@ export async function get() {
   return rss({
     title: SITE.title,
     description: SITE.description,
-    site: "https://inquisitive-gelato-e04f0f.netlify.app/",
+    site: SITE.site,
     items: sortedPosts.map((post) => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
