@@ -7,7 +7,7 @@ categories:
 - tutorial
 tags: ["hugo", "latex"]
 math: true
-draft: false
+draft: true
 pubDate: 2022-11-28
 lastMod:
 ---
