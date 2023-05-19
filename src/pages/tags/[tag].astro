@@ -26,7 +26,9 @@ const { posts } = Astro.props;
 ---
 
 <BaseLayout title={tag}>
-  <h1>#{tag}</h1>
+  <h1 class="font-extrabold text-2xl">
+    #{tag}
+  </h1>
   <ul class="block list-disc my-4 pl-10">
     {posts.map((post) => <PostItem frontmatter={post.data} url={"/posts/" + post.slug} />)}
   </ul>

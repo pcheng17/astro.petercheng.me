@@ -17,13 +17,14 @@ const tags = allPosts.map((post) => post.data.tags).flat();
 const tagCounts = countStrings(tags);
 const uniqueTags = [...new Set(tags)].sort();
 
-const title = "Tags";
+const headerTitle = "Tags - Peter Cheng";
+const pageTitle = "Tags";
 // TODO - add description
 ---
 
-<BaseLayout title={title}>
+<BaseLayout title={headerTitle}>
   <h1 class="font-extrabold text-2xl">
-    {title}
+    {pageTitle}
   </h1>
   <div>
     <ul class="block list-disc my-4 pl-10">

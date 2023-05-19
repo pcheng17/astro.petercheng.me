@@ -10,13 +10,13 @@ const sortedPosts = allPosts.sort((a, b) => {
   return a.data.pubDate < b.data.pubDate ? 1 : -1;
 });
 
-const title = "Home Page";
+const title = "Home - Peter Cheng";
 // TODO - add description
 const description = null;
 ---
 
 <BaseLayout title={title}>
-  <p>
+  <p class="my-4">
     This is my site. I'm trying to learn how to use Astro, which has been quite interesting so far.
   </p>
   <ul class="block list-disc my-4 pl-10">
