@@ -2,11 +2,10 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 const headerTitle = "About - Peter Cheng";
 const pageTitle = "About me";
-const description = "A brief introduction to Peter Cheng.";
-// TODO add description
+const description = "A brief summary of Peter Cheng.";
 ---
 
-<BaseLayout title={headerTitle}>
+<BaseLayout title={headerTitle} description={description}>
   <h1 class="font-extrabold text-2xl">
     {pageTitle}
   </h1>
