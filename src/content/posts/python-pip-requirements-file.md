@@ -3,8 +3,6 @@ title: Python pip requirements file
 date: 2022-11-26
 description: How to create and ingest a Python pip requirements file.
 keywords:
-categories:
-- note
 tags:
 - python
 math: false

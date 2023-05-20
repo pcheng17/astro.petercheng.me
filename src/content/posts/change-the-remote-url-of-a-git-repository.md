@@ -2,9 +2,9 @@
 title: "Change the remote URL of a Git repository"
 date: 2022-11-13T23:26:02-08:00
 description: How to change the remote URL of a git repository.
-keywords:
-categories:
-- note
+keywords:  
+- https
+- ssh
 tags:
 - git
 math: false

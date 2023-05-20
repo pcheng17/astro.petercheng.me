@@ -1,10 +1,8 @@
 ---
 title: Jacobi and Gauss-Seidel
 date: 2023-01-12
-description: Jacobi and Gauss-Seidel are two popular iterative methods for solving systems of linear equations.
+description: Jacobi and Gauss-Seidel are two popular iterative methods for solving systems of linear equations. In this post, we will present both methods, quickly discuss convergence properties, and also present a generic framework for the class of methods to which Jacobi and Gauss-Seidel belong.
 keywords:
-categories:
-- note
 tags: ["math", "linear-algebra"]
 math: true
 toc: false

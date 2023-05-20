@@ -1,10 +1,11 @@
 ---
 title: "Visualizing directory structures in plain text"
 date: 2022-11-15T21:50:13-08:00
-description: Visualizing the directory structure using `tree`, a command line tool.
+description: Visualizing the directory structure using tree, a command line tool.
 keywords:
-categories:
-- note
+- tree
+- homebrew
+- brew
 tags:
 - cli
 - workflow

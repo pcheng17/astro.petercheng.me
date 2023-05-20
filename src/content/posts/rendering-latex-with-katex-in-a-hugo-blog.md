@@ -3,8 +3,6 @@ title: Rendering LaTeX with KaTeX in a Hugo blog
 date: 2022-11-03T00:21:12-07:00
 description: A tutorial on using KaTeX to render LaTeX for blogs built with Hugo.
 keywords:
-categories:
-- tutorial
 tags: ["hugo", "latex"]
 math: true
 draft: true
