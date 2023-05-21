@@ -7,7 +7,8 @@ const options = {
   keys: ["data.title", "data.keywords", "data.tags"],
   includeMatches: true,
   minMatchCharLength: 2,
-  threshold: 0.5,
+  threshold: 0.3,
+  useExtendedSearch: true,
 };
 
 function Search({ searchList }) {
@@ -48,14 +49,14 @@ function Search({ searchList }) {
           {
             posts &&
             posts.map((post) => (
-              <li>
+              <li key={post.data.title}>
                 <a href={`/posts/${post.slug}`} className="text-base text-penn-red hover:underline" title={post.data.title}>
                   {post.data.title}
                 </a>
                 {
                   post.data.tags.map((tag) => (
-                    <span class="inline-block text-neutral-400 text-xs px-1">
-                      <a href={`/tags/${tag}`} class="hover:underline">
+                    <span key={tag} className="inline-block text-neutral-400 text-xs px-1">
+                      <a href={`/tags/${tag}`} className="hover:underline">
                         #{tag}
                       </a>
                     </span>
