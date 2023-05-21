@@ -4,10 +4,15 @@ import NavItem from "./NavItem.astro";
 
 <nav class="px-3 pb-[0.4rem] pt-[0.8rem]">
   <!-- Janky vertical padding because of my custom hr -->
-  <div class="flex flex-row justify-end">
-    <NavItem title="Home" url="/" />
-    <NavItem title="Tags" url="/tags" />
-    <NavItem title="About" url="/about" />
-    <NavItem title="RSS" url="/rss.xml" />
+  <div class="flex justify-between">
+    <!-- <span class="flex items-center text-base">
+      petercheng.me
+    </span> -->
+    <span class="flex flex-row">
+      <NavItem title="Home" url="/" />
+      <NavItem title="Tags" url="/tags" />
+      <NavItem title="About" url="/about" />
+      <NavItem title="RSS" url="/rss.xml" />
+    </span>
   </div>
 </nav>
