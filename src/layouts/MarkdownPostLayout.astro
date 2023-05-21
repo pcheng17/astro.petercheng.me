@@ -17,20 +17,22 @@ const englishDate = frontmatter.pubDate.toLocaleDateString("en-US", {
   <article
     class="prose prose-sm leading-7 text-neutral-950 max-w-none prose-a:no-underline prose-a:text-penn-red hover:prose-a:underline prose-code:text-sm prose-pre:rounded-md prose-pre:border-solid prose-pre:border-[1px] prose-pre:border-neutral-300 prose-strong:font-bold"
   >
-    <p class="text-neutral-400 text-xs my-4">
+    <h1>{title}</h1>
+    <p class="text-neutral-400 text-xs">
       Published on: {englishDate}
     </p>
     <slot />
-  </article>
-  <div class="mt-4">
-    {
-      tags.map((tag) => (
-        <span class="inline-block text-neutral-400 text-xs pr-2">
-          <a href={`/tags/${tag}`} class="hover:underline">
+    <div class="mt-4">
+      {
+        tags.map((tag) => (
+          <a
+            href={`/tags/${tag}`}
+            class="inline-block text-neutral-400 text-xs pr-2 hover:underline"
+          >
             #{tag}
           </a>
-        </span>
-      ))
-    }
-  </div>
+        ))
+      }
+    </div>
+  </article>
 </BaseLayout>
