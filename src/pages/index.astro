@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PostItem from "../components/PostItem.astro";
+import SearchBar from "../components/SearchBar.astro";
 import { getCollection } from "astro:content";
 import { SITE } from "../config.ts";
 
@@ -20,7 +21,8 @@ const description = SITE.description;
     An incomplete yet ever-growing collection of notes on things I've learned. Enjoy your time
     browsing!
   </p>
-  <ul class="block list-disc my-4 pl-10">
+  <SearchBar searchList={allPosts} />
+  <!-- <ul class="block list-disc my-4 pl-10">
     {sortedPosts.map((post) => <PostItem frontmatter={post.data} url={"/posts/" + post.slug} />)}
-  </ul>
+  </ul> -->
 </BaseLayout>
