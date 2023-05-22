@@ -26,4 +26,17 @@ const { title, description } = Astro.props;
     integrity="sha384-Cqd8ihRLum0CCg8rz0hYKPoLZ3uw+gES2rXQXycqnL5pgVQIflxAUDS7ZSjITLb5"
     crossorigin="anonymous"
   />
+
+  <!-- Google tag (gtag.js) -->
+  <script async type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-JD0V6N6983"
+  ></script>
+  <script type="text/partytown">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-JD0V6N6983");
+  </script>
 </head>

@@ -20,6 +20,7 @@
     "remark-math": "^5.1.1"
   },
   "devDependencies": {
+    "@astrojs/partytown": "^1.2.2",
     "@tailwindcss/typography": "^0.5.9",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.0",
