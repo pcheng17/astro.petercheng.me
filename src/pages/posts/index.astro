@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostItem from "../../components/PostItem.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("posts", ({ data }) => {
+  return data.draft !== true;
+});
+const sortedPosts = allPosts.sort((a, b) => {
+  return a.data.pubDate < b.data.pubDate ? 1 : -1;
+});
+
+const title = "Posts - Peter Cheng";
+const pageTitle = "Posts";
+// TODO - add description
+---
+
+<BaseLayout title={title}>
+  <h1 class="font-extrabold text-2xl">
+    {pageTitle}
+  </h1>
+  <ul class="block list-disc my-4 pl-10">
+    {sortedPosts.map((post) => <PostItem frontmatter={post.data} url={"/posts/" + post.slug} />)}
+  </ul>
+</BaseLayout>
