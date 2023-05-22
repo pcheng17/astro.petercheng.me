@@ -2,12 +2,22 @@
 import NavItem from "./NavItem.astro";
 ---
 
-<nav class="px-3 pb-[0.4rem] pt-[0.8rem]">
+<nav class="pl-2 pr-3">
   <!-- Janky vertical padding because of my custom hr -->
-  <div class="flex flex-row justify-end">
-    <NavItem title="Home" url="/" />
-    <NavItem title="Tags" url="/tags" />
-    <NavItem title="About" url="/about" />
-    <NavItem title="RSS" url="/rss.xml" />
+  <span class="items-center absolute">
+    <a href="/">
+      <img src="/assets/favicon.svg" alt="logo" class="mt-1 pt-1 w-12 h-12" />
+    </a>
+  </span>
+  <div class="flex h-[48px] items-center justify-between">
+    <span class="ml-12 pt-2">
+      <a href="/" class="hover:underline">Peter Cheng</a>
+    </span>
+    <span class="pt-2">
+      <NavItem title="Posts" url="/posts" />
+      <NavItem title="Tags" url="/tags" />
+      <NavItem title="About" url="/about" />
+      <NavItem title="RSS" url="/rss.xml" />
+    </span>
   </div>
 </nav>
