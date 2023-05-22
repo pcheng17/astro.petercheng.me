@@ -13,8 +13,6 @@ pubDate: 2022-12-10
 lastmod:
 ---
 
-# Cholesky factorization
-
 Before we introduce the Cholesky factorization, let's define some of the key words that will be used. Let $A \in \mathbb{C}^{n \times n}$.
 
 - $A$ is **Hermitian** if $A^{\ast} = A$, where $A^{\ast}$ is the conjugate transpose of $A$, i.e. $[A^{\ast}]_{ij} = \overline{A_{ji}}$. Note that if $A$ is real, then $A$ being Hermitian just means that $A$ is **symmetric**.

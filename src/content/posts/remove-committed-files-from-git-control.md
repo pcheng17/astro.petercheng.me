@@ -12,8 +12,6 @@ pubDate: 2022-12-02
 lastmod:
 ---
 
-# Remove committed files from Git control
-
 To remove a single file from Git-version control, use
 
 ```bash
