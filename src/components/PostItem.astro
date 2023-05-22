@@ -6,12 +6,18 @@ const englishDate = frontmatter.pubDate.toLocaleDateString("en-US", {
   year: "numeric",
   month: "short",
   day: "numeric",
+  timeZone: "UTC",
 });
 ---
 
 <li>
-  <a href={url} class="text-base text-penn-red hover:underline" title={title}>{title}</a>
-  {
+  <div class="flex justify-between items-center">
+    <span>
+      <a href={url} class="text-base text-penn-red hover:underline" title={title}>{title}</a>
+    </span>
+    <span class="text-neutral-400 text-xs px-1">{englishDate}</span>
+  </div>
+  <!-- {
     tags.map((tag) => (
       <span class="inline-block text-neutral-400 text-xs px-1">
         <a href={`/tags/${tag}`} class="hover:underline">
@@ -19,5 +25,5 @@ const englishDate = frontmatter.pubDate.toLocaleDateString("en-US", {
         </a>
       </span>
     ))
-  }
+  } -->
 </li>
