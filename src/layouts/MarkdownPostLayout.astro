@@ -1,27 +1,14 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import { getShortDate } from "../utils/date";
 const { frontmatter } = Astro.props;
 
 const title = frontmatter.title;
 const description = frontmatter.description;
 const tags = frontmatter.tags;
 
-const englishDate = frontmatter.pubDate.toLocaleDateString("en-US", {
-  year: "numeric",
-  month: "short",
-  day: "numeric",
-  timeZone: "UTC",
-});
-
-let englishLastMod = null;
-if (frontmatter.lastMod) {
-  englishLastMod = frontmatter.lastMod.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-    timeZone: "UTC",
-  });
-}
+const pubDate = getShortDate(frontmatter.pubDate);
+const lastMod = frontmatter.lastMod && getShortDate(frontmatter.lastMod);
 ---
 
 <BaseLayout title={title} description={description}>
@@ -30,12 +17,12 @@ if (frontmatter.lastMod) {
   >
     <h1>{title}</h1>
     <div class="text-neutral-400 text-xs my-1">
-      <span> Published: {englishDate}</span>
+      <span> Published: {pubDate}</span>
       {
-        englishLastMod && (
+        lastMod && (
           <>
             <span class="mx-1">|</span>
-            <span>Last modified: {englishLastMod}</span>
+            <span>Last modified: {lastMod}</span>
           </>
         )
       }
