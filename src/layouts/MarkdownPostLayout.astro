@@ -21,7 +21,9 @@ const lastMod = frontmatter.lastMod && getShortDate(frontmatter.lastMod);
       {
         lastMod && (
           <>
-            <span class="mx-1">|</span>
+            <span class="mx-1" aria-hidden="true">
+              |
+            </span>
             <span>Last modified: {lastMod}</span>
           </>
         )
