@@ -12,12 +12,13 @@ const englishDate = frontmatter.pubDate.toLocaleDateString("en-US", {
 <li>
   <a href={url} class="text-base text-penn-red hover:underline" title={title}>{title}</a>
   {
-    tags.map((tag) => (
-      <span class="inline-block text-neutral-400 text-xs px-1">
-        <a href={`/tags/${tag}`} class="hover:underline">
-          #{tag}
-        </a>
-      </span>
-    ))
+    tags &&
+      tags.map((tag) => (
+        <span class="inline-block text-neutral-400 text-xs px-1">
+          <a href={`/tags/${tag}`} class="hover:underline">
+            #{tag}
+          </a>
+        </span>
+      ))
   }
 </li>
