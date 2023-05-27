@@ -22,11 +22,17 @@ import "@fontsource/noto-sans/900.css";
 import "@fontsource/noto-sans/900-italic.css";
 import "@fontsource/ubuntu-mono";
 
-const { title, description } = Astro.props;
+export interface Props {
+  title: string;
+  description?: string;
+  math?: boolean;
+}
+
+const { title, description, math } = Astro.props;
 ---
 
 <html lang="en" class="overflow-y-scroll">
-  <Head title={title} description={description} />
+  <Head title={title} description={description} math={math} />
   <body class="text-[15px] leading-7 px-2 mx-auto max-w-screen-md bg-floral-white text-neutral-950">
     <Header />
     <main class="mx-2 my-4">
