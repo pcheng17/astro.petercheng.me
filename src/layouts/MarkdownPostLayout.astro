@@ -12,6 +12,16 @@ const englishDate = frontmatter.pubDate.toLocaleDateString("en-US", {
   day: "numeric",
   timeZone: "UTC",
 });
+
+let englishLastMod = null;
+if (frontmatter.lastMod) {
+  englishLastMod = frontmatter.lastMod.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+}
 ---
 
 <BaseLayout title={title} description={description}>
@@ -19,20 +29,29 @@ const englishDate = frontmatter.pubDate.toLocaleDateString("en-US", {
     class="prose prose-sm leading-7 text-neutral-950 max-w-none prose-a:no-underline prose-a:text-penn-red hover:prose-a:underline prose-code:text-sm prose-pre:rounded-md prose-pre:border-solid prose-pre:border-[1px] prose-pre:border-neutral-300 prose-strong:font-bold"
   >
     <h1>{title}</h1>
-    <p class="text-neutral-400 text-xs">
-      Published on: {englishDate}
-    </p>
+    <div class="text-neutral-400 text-xs my-1">
+      <span> Published: {englishDate}</span>
+      {
+        englishLastMod && (
+          <>
+            <span class="mx-1">|</span>
+            <span>Last modified: {englishLastMod}</span>
+          </>
+        )
+      }
+    </div>
     <slot />
     <div class="mt-4">
       {
-        tags.map((tag) => (
-          <a
-            href={`/tags/${tag}`}
-            class="inline-block text-neutral-400 text-xs pr-2 hover:underline"
-          >
-            #{tag}
-          </a>
-        ))
+        tags &&
+          tags.map((tag) => (
+            <a
+              href={`/tags/${tag}`}
+              class="inline-block text-neutral-400 text-xs pr-2 hover:underline"
+            >
+              #{tag}
+            </a>
+          ))
       }
     </div>
   </article>
