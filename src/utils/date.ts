@@ -3,6 +3,7 @@ export function getShortDate(date: Date) {
     year: "numeric",
     month: "short",
     day: "numeric",
+    timeZone: "UTC",
   });
 }
 
@@ -11,5 +12,6 @@ export function getLongDate(date: Date) {
     year: "numeric",
     month: "long",
     day: "numeric",
+    timeZone: "UTC",
   });
 }

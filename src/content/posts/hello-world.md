@@ -3,8 +3,6 @@ title: Hello, world!
 date: 2022-10-30T22:10:04-07:00
 description: Peter Cheng's first blog post.
 keywords:
-categories:
-- blog
 tags:
 - journal
 math: false

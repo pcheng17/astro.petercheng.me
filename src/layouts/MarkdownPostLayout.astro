@@ -18,14 +18,22 @@ const lastMod = frontmatter.lastMod && getShortDate(frontmatter.lastMod);
   >
     <h1>{title}</h1>
     <div class="text-neutral-400 text-xs my-1">
-      <span> Published: {pubDate}</span>
+      <span>
+        Published:
+        <time>
+          {pubDate}
+        </time>
+      </span>
       {
         lastMod && (
           <>
             <span class="mx-1" aria-hidden="true">
               |
             </span>
-            <span>Last modified: {lastMod}</span>
+            <span>
+              Last modified:
+              <time>{lastMod}</time>
+            </span>
           </>
         )
       }
