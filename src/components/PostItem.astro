@@ -2,7 +2,7 @@
 import { getShortDate } from "../utils/date";
 const { frontmatter, url } = Astro.props;
 const title = frontmatter.title;
-const tags = frontmatter.tags;
+const tags = frontmatter.tags.sort();
 const pubDate = getShortDate(frontmatter.pubDate);
 ---
 
