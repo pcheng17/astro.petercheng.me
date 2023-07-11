@@ -11,6 +11,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@astrojs/preact": "^2.2.0",
     "@astrojs/rss": "^2.4.1",
     "@astrojs/tailwind": "^3.1.1",
     "@fontsource/noto-sans": "^4.5.11",
