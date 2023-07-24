@@ -8,10 +8,13 @@ tags:
 - south-korea
 math: false
 toc: false
-draft: true
+draft: false
 pubDate: 2023-06-19
-lastMod:
+lastMod: 2023-07-23
 ---
+
+🚧 This page will probably be a work in progress for a long time. There's always more to add as I
+find the time to write!
 
 ## Before departure
 
@@ -76,7 +79,7 @@ lastMod:
 
 #### Hongdae
 
-- 🍽️ Oreno Ramen Main Store [[location](https://g.page/orenoramen?share)]
+- 🍽️ [Oreno Ramen Main Store](https://goo.gl/maps/zL3ELLePjbM4AZPW6)
     - This place was awarded the Michelin Bib Gourmands award in 2019 (high-quality dining at a reasonable price). It was pretty great ramen, so I think it’s well-deserved.
 
 #### Gangnam
