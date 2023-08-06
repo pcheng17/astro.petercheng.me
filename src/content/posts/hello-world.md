@@ -9,7 +9,7 @@ math: false
 toc: false
 draft: false
 pubDate: 2022-11-20
-lastMod: 2023-05-25
+lastMod: 2023-08-06
 ---
 
 Hello, world! I now have a little corner on the interwebs all to myself.
@@ -20,8 +20,10 @@ importance of writing things down. Our brains are great at producing new ideas, 
 remembering things.
 
 This website is built by me with [Astro](https://astro.build/) and 
-[Tailwind](https://tailwindcss.com/). It's been a lot of fun learning basic
-frontend-skills, and I'm looking forward to seeing how this website grows overtime!
+[Tailwind](https://tailwindcss.com/), and deployed on [Netlify](https://netlify.com). It's been a
+lot of fun learning basic frontend skills, and I'm looking forward to seeing how this website grows
+overtime! If you're curious, check out the source code
+[here](https://github.com/pcheng17/petercheng.me). I am always happy to receive feedback!
 
 This was inspired by the work of many others, in no particular order:
 - Josh Branchaud's [repository](https://github.com/jbranchaud/til) aptly named "Today I Learned"
