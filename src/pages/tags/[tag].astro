@@ -27,10 +27,11 @@ export async function getStaticPaths() {
 const { tag } = Astro.params;
 const { posts } = Astro.props;
 
+const headerTitle = "Tags | Peter Cheng";
 // TODO - add description
 ---
 
-<BaseLayout title={tag}>
+<BaseLayout title={headerTitle}>
   <h1 class="font-extrabold text-2xl">
     #{tag}
   </h1>
