@@ -5,3 +5,9 @@ export type Site = {
   description: string;
   title: string;
 };
+
+export type OpenGraphMetadata = {
+  title: string;
+  description: string;
+  url: string;
+};
