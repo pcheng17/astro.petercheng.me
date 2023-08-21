@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         "penn-red": "#a00000",
         "floral-white": "#fffbf3",
+        "off-white": "#f5f2e9",
       },
       typography(theme) {
         return {
